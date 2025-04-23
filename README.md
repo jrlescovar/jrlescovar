@@ -45,7 +45,8 @@
 ###
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=jrlescovar&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=10&theme=graywhite&hide_border=false&order=2" height="139" alt="languages graph"  />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=jrlescovar&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=10&theme=aura&hide_border=true&order=2" height="139" alt="languages graph"  />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=jrlescovar&radius=16&theme=nightowl&area=true&order=5" height="300" alt="activity-graph graph"  />
 </div>
 
 ###

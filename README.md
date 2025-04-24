@@ -1,4 +1,4 @@
-<h2 align="left">printf("Hello World!\n");</h2>
+<h1 align="left">printf("Hello World!\n");</h1>
 
 ###
 
@@ -6,11 +6,11 @@
 
 ###
 
-<h3 align="left">Languages ​​and Technologies:</h3>
+<h2 align="left">Languages ​​and Technologies</h2>
 
 ###
 
-<div align="center">
+<div align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" height="40" alt="c logo"  />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="40" alt="cplusplus logo"  />
@@ -30,11 +30,11 @@
 
 ###
 
-<h3 align="left">Tools:</h3>
+<h2 align="left">Tools:</h2>
 
 ###
 
-<div align="center">
+<div align="left">
   <img src="https://skillicons.dev/icons?i=vscode" height="40" alt="vscode logo"  />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg" height="40" alt="pycharm logo"  />
@@ -44,9 +44,7 @@
 
 ###
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=jrlescovar&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=10&theme=aura&hide_border=true&order=2" height="139" alt="languages graph"  />
+<div align="left">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jrlescovar&layout=compact&langs_count=6&theme=dark&hide_border=false" height="150" alt="Top Languages" />
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=jrlescovar&radius=16&theme=nightowl&area=true&order=5" height="300" alt="activity-graph graph"  />
 </div>
-
-###

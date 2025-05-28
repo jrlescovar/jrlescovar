@@ -34,7 +34,7 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/clion/clion-original.svg" height="40" alt="clion logo" />
 </div>
 
-<h2 align="center">📊 Linguagens mais usadas</h2>
+<h2 align="center">📊 Most used languages</h2>
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jrlescovar&layout=compact&theme=tokyonight&langs_count=6" alt="Top Languages"/>

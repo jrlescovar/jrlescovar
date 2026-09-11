@@ -1,7 +1,7 @@
 <div align="center">
 Olá, eu sou João Lescovar,
 Desenvolvedor Full Stack e estudante de Sistemas de Informação.  
-
+</div>br>
 
 [![Portfólio](https://img.shields.io/badge/Portfólio-c77b78?style=for-the-badge&logo=googlechrome&logoColor=white)](https://jrlescovardeveloper.web.app/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-171515?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jo%C3%A3o-lescovar-18b951277/)

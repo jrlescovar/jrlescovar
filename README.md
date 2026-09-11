@@ -1,9 +1,5 @@
 <div align="center">
-
-# `&lt;jrDev/&gt;`
-
 ### Olá, eu sou João Lescovar 👋
-
 Desenvolvedor Full Stack e estudante de Sistemas de Informação.  
 Transformo ideias em aplicações modernas, organizadas e agradáveis de usar.
 
@@ -32,9 +28,6 @@ Transformo ideias em aplicações modernas, organizadas e agradáveis de usar.
 </div>
 
 <div align="center">
-
-### Curiosidade para aprender. Disciplina para construir.
-
 إيما
 
 </div>

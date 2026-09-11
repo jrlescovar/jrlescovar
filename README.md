@@ -1,5 +1,5 @@
 <div align="center">
-Olá, eu sou João Lescovar 👋
+Olá, eu sou João Lescovar,
 Desenvolvedor Full Stack e estudante de Sistemas de Informação.  
 
 

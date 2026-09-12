@@ -1,6 +1,6 @@
 <div align="center">
 Olá, eu sou João Lescovar,
-Desenvolvedor Full Stack e estudante de Sistemas de Informação.  
+Desenvolvedor Full Stack e estudante de Sistemas de Informação.   
 
 <div><br></div>
 

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="580" height="353" viewBox="0 0 580 353" role="img" aria-label="Linguagens mais usadas no GitHub">
+<rect width="580" height="353" rx="16" fill="#1f2335"/>
+<text x="28" y="43" font-size="23" font-weight="bold" fill="#ff79b2" font-family="Arial,sans-serif">Top Languages</text>
+<text x="28" y="66" font-size="12" fill="#aeb7c8" font-family="Arial,sans-serif">Distribuição por bytes de código em repositórios públicos</text>
+<text x="28" y="102" font-size="15" font-weight="bold" fill="#e8eef5" font-family="Arial,sans-serif">C</text>
+<rect x="28" y="114" width="390" height="12" rx="6" fill="#3a4054"/>
+<rect x="28" y="114" width="309" height="12" rx="6" fill="#a8b9cc"/>
+<text x="442" y="125" font-size="14" fill="#e8eef5" font-family="Arial,sans-serif">79.4%</text>
+<text x="28" y="164" font-size="15" font-weight="bold" fill="#e8eef5" font-family="Arial,sans-serif">JavaScript</text>
+<rect x="28" y="176" width="390" height="12" rx="6" fill="#3a4054"/>
+<rect x="28" y="176" width="46" height="12" rx="6" fill="#f1e05a"/>
+<text x="442" y="187" font-size="14" fill="#e8eef5" font-family="Arial,sans-serif">11.9%</text>
+<text x="28" y="226" font-size="15" font-weight="bold" fill="#e8eef5" font-family="Arial,sans-serif">CSS</text>
+<rect x="28" y="238" width="390" height="12" rx="6" fill="#3a4054"/>
+<rect x="28" y="238" width="23" height="12" rx="6" fill="#663399"/>
+<text x="442" y="249" font-size="14" fill="#e8eef5" font-family="Arial,sans-serif">6.0%</text>
+<text x="28" y="288" font-size="15" font-weight="bold" fill="#e8eef5" font-family="Arial,sans-serif">HTML</text>
+<rect x="28" y="300" width="390" height="12" rx="6" fill="#3a4054"/>
+<rect x="28" y="300" width="10" height="12" rx="6" fill="#e34c26"/>
+<text x="442" y="311" font-size="14" fill="#e8eef5" font-family="Arial,sans-serif">2.7%</text>
+</svg>

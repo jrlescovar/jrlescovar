@@ -32,5 +32,5 @@ Sou desenvolvedor Full Stack e estudante de Sistemas de Informação. Aqui compa
 ### Top Languages
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jrlescovar&layout=compact&theme=radical" alt="Linguagens mais usadas nos repositórios públicos do GitHub" />
+  <img src="./assets/top-languages.svg" alt="Top Languages: distribuição das linguagens nos repositórios públicos do GitHub" width="580" />
 </p>

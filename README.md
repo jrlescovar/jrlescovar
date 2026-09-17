@@ -20,17 +20,11 @@ Sou desenvolvedor Full Stack e estudante de Sistemas de Informação. Aqui compa
 ### Tecnologias
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nodejs,firebase,mysql,figma&theme=dark" alt="HTML, CSS, JavaScript, TypeScript, React, Node.js, Firebase, MySQL e Figma" />
+  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nodejs,firebase,mysql&theme=dark" alt="HTML, CSS, JavaScript, TypeScript, React, Node.js, Firebase e MySQL" />
 </p>
 
 ### Ferramentas
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=git,github,vscode&theme=dark" alt="Git, GitHub e Visual Studio Code" />
-</p>
-
-### Top Languages
-
-<p align="center">
-  <img src="./assets/top-languages.svg" alt="Top Languages: distribuição das linguagens nos repositórios públicos do GitHub" width="580" />
 </p>

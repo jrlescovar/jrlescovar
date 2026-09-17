@@ -1,0 +1,79 @@
+name: Atualizar linguagens do perfil
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/top-languages.yml']
+  schedule:
+    - cron: '17 6 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  update-languages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Gerar card de linguagens
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import collections, html, json, os, pathlib, urllib.request
+
+          def get_json(url):
+              req = urllib.request.Request(url, headers={
+                  'Accept': 'application/vnd.github+json',
+                  'Authorization': 'Bearer ' + os.environ['GH_TOKEN'],
+                  'User-Agent': 'jrlescovar-profile-card',
+              })
+              with urllib.request.urlopen(req, timeout=25) as response:
+                  return json.load(response)
+
+          totals = collections.Counter()
+          page = 1
+          while True:
+              repos = get_json(f'https://api.github.com/users/jrlescovar/repos?per_page=100&page={page}&type=owner')
+              if not repos:
+                  break
+              for repo in repos:
+                  if repo.get('fork') or repo.get('name') == 'jrlescovar':
+                      continue
+                  totals.update(get_json(repo['languages_url']))
+              if len(repos) < 100:
+                  break
+              page += 1
+
+          top = totals.most_common(6)
+          if not top:
+              raise RuntimeError('GitHub não retornou dados de linguagens')
+          colors = {'C':'#a8b9cc','C++':'#f34b7d','JavaScript':'#f1e05a','TypeScript':'#3178c6','HTML':'#e34c26','CSS':'#663399','Python':'#3572a5','Shell':'#89e051','Java':'#b07219'}
+          total = sum(totals.values())
+          h = 105 + len(top) * 62
+          s = [f'<svg xmlns="http://www.w3.org/2000/svg" width="580" height="{h}" viewBox="0 0 580 {h}" role="img" aria-label="Linguagens mais usadas no GitHub">',
+               f'<rect width="580" height="{h}" rx="16" fill="#1f2335"/>',
+               '<text x="28" y="43" font-size="23" font-weight="bold" fill="#ff79b2" font-family="Arial,sans-serif">Top Languages</text>',
+               '<text x="28" y="66" font-size="12" fill="#aeb7c8" font-family="Arial,sans-serif">Distribuição por bytes de código em repositórios públicos</text>']
+          for i, (name, count) in enumerate(top):
+              y = 102 + i * 62
+              pct = count / total * 100
+              width = max(3, int(390 * pct / 100))
+              s += [f'<text x="28" y="{y}" font-size="15" font-weight="bold" fill="#e8eef5" font-family="Arial,sans-serif">{html.escape(name)}</text>',
+                    f'<rect x="28" y="{y+12}" width="390" height="12" rx="6" fill="#3a4054"/>',
+                    f'<rect x="28" y="{y+12}" width="{width}" height="12" rx="6" fill="{colors.get(name,"#6ecacb")}"/>',
+                    f'<text x="442" y="{y+23}" font-size="14" fill="#e8eef5" font-family="Arial,sans-serif">{pct:.1f}%</text>']
+          s.append('</svg>')
+          pathlib.Path('assets').mkdir(exist_ok=True)
+          pathlib.Path('assets/top-languages.svg').write_text('\n'.join(s) + '\n', encoding='utf-8')
+          PY
+      - name: Publicar card atualizado
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/top-languages.svg
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: atualiza estatísticas de linguagens"
+            git push
+          fi

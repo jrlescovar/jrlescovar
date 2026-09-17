@@ -28,11 +28,3 @@ Sou desenvolvedor Full Stack e estudante de Sistemas de Informação. Aqui compa
 <p align="center">
   <img src="https://skillicons.dev/icons?i=git,github,vscode&theme=dark" alt="Git, GitHub e Visual Studio Code" />
 </p>
-
-### Projetos
-
-- [Meu portfólio](https://github.com/jrlescovar/jrlescovardeveloper)
-- [SneakerStore](https://github.com/jrlescovar/SneakerStore)
-- [Editor de texto em C](https://github.com/jrlescovar/text-editor-in-c)
-
-<p align="center"><sub>Conheça mais projetos no <a href="https://github.com/jrlescovar?tab=repositories">meu GitHub</a>.</sub></p>
